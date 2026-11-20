@@ -1,0 +1,358 @@
+{
+  "datasets": [
+    "CORD-v2"
+  ],
+  "audit": {
+    "samples": 992,
+    "split_counts": {
+      "test": 98,
+      "train": 794,
+      "dev": 100
+    },
+    "errors": [],
+    "synthetic_samples": 0,
+    "warnings": [],
+    "group_overlaps": [],
+    "grouping_limitations": [
+      "无可靠商户标签，官方切分不是商户隔离；语言为数据集级元信息"
+    ],
+    "near_duplicates": [],
+    "gt_coverage": [
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "address",
+        "status": "unannotated",
+        "count": 100
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "date",
+        "status": "unannotated",
+        "count": 100
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "items",
+        "status": "present_readable",
+        "count": 80
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "items",
+        "status": "unannotated",
+        "count": 20
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "merchant_name",
+        "status": "unannotated",
+        "count": 100
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "order_number",
+        "status": "unannotated",
+        "count": 100
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "payment_method",
+        "status": "unannotated",
+        "count": 100
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "phone",
+        "status": "unannotated",
+        "count": 100
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "subtotal",
+        "status": "present_readable",
+        "count": 67
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "subtotal",
+        "status": "unannotated",
+        "count": 33
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "tax",
+        "status": "present_readable",
+        "count": 47
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "tax",
+        "status": "unannotated",
+        "count": 53
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "time",
+        "status": "unannotated",
+        "count": 100
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "total",
+        "status": "present_readable",
+        "count": 98
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "dev",
+        "field": "total",
+        "status": "unannotated",
+        "count": 2
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "address",
+        "status": "unannotated",
+        "count": 98
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "date",
+        "status": "unannotated",
+        "count": 98
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "items",
+        "status": "present_readable",
+        "count": 75
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "items",
+        "status": "unannotated",
+        "count": 23
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "merchant_name",
+        "status": "unannotated",
+        "count": 98
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "order_number",
+        "status": "unannotated",
+        "count": 98
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "payment_method",
+        "status": "unannotated",
+        "count": 98
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "phone",
+        "status": "unannotated",
+        "count": 98
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "subtotal",
+        "status": "present_readable",
+        "count": 64
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "subtotal",
+        "status": "unannotated",
+        "count": 34
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "tax",
+        "status": "present_readable",
+        "count": 42
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "tax",
+        "status": "unannotated",
+        "count": 56
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "time",
+        "status": "unannotated",
+        "count": 98
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "total",
+        "status": "present_readable",
+        "count": 95
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "test",
+        "field": "total",
+        "status": "unannotated",
+        "count": 3
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "address",
+        "status": "unannotated",
+        "count": 794
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "date",
+        "status": "unannotated",
+        "count": 794
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "items",
+        "status": "present_readable",
+        "count": 622
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "items",
+        "status": "unannotated",
+        "count": 172
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "merchant_name",
+        "status": "unannotated",
+        "count": 794
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "order_number",
+        "status": "unannotated",
+        "count": 794
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "payment_method",
+        "status": "unannotated",
+        "count": 794
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "phone",
+        "status": "unannotated",
+        "count": 794
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "subtotal",
+        "status": "present_readable",
+        "count": 522
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "subtotal",
+        "status": "unannotated",
+        "count": 272
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "tax",
+        "status": "present_readable",
+        "count": 349
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "tax",
+        "status": "unannotated",
+        "count": 445
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "time",
+        "status": "unannotated",
+        "count": 794
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "total",
+        "status": "present_readable",
+        "count": 778
+      },
+      {
+        "schema_version": "receipt_v1",
+        "split": "train",
+        "field": "total",
+        "status": "unannotated",
+        "count": 16
+      }
+    ]
+  },
+  "exports": {
+    "sft_train": 794,
+    "grpo_train": 794,
+    "dpo_train_synthetic": 1326,
+    "sft_dev": 100,
+    "grpo_dev": 100,
+    "dpo_dev_synthetic": 172
+  },
+  "synthetic_preferences": true,
+  "test_training_exports": false,
+  "gpu_training_run": false,
+  "model_generated_preferences": false,
+  "limitations": [
+    "CORD has no public merchant/date/address labels",
+    "No new human double-review",
+    "Official CORD splits do not establish merchant OOD",
+    "Synthetic negatives are not model-generated DPO preferences",
+    "Whole items target omitted if any item attribute is unannotated; source GT retained; no token-level masking claimed",
+    "8 of 1000 raw records excluded for no reliable target; test subset has 98 records, not official full 100-sample benchmark"
+  ]
+}

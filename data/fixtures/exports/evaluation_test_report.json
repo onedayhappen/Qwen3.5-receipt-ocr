@@ -1,0 +1,8 @@
+{
+  "samples": 1,
+  "synthetic": true,
+  "target_characters_max": 130,
+  "target_characters_p95": 130,
+  "token_budget_verified": false,
+  "limitation": "字符统计不等于 tokenizer/视觉 token 预算；训练前仍需处理器预检"
+}

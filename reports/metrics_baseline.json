@@ -1,0 +1,134 @@
+{
+  "samples": 992,
+  "split_counts": {
+    "test": 98,
+    "train": 794,
+    "dev": 100
+  },
+  "annotation_coverage": {
+    "test": {
+      "samples": 98,
+      "field_slots": 1078,
+      "supervised_slots": 276,
+      "coverage_pct": 25.6,
+      "key_slots": 294,
+      "key_supervised": 95,
+      "key_coverage_pct": 32.31,
+      "per_field": {
+        "items": 75,
+        "subtotal": 64,
+        "tax": 42,
+        "total": 95
+      }
+    },
+    "train": {
+      "samples": 794,
+      "field_slots": 8734,
+      "supervised_slots": 2271,
+      "coverage_pct": 26.0,
+      "key_slots": 2382,
+      "key_supervised": 778,
+      "key_coverage_pct": 32.66,
+      "per_field": {
+        "items": 622,
+        "subtotal": 522,
+        "tax": 349,
+        "total": 778
+      }
+    },
+    "dev": {
+      "samples": 100,
+      "field_slots": 1100,
+      "supervised_slots": 292,
+      "coverage_pct": 26.55,
+      "key_slots": 300,
+      "key_supervised": 98,
+      "key_coverage_pct": 32.67,
+      "per_field": {
+        "items": 80,
+        "total": 98,
+        "subtotal": 67,
+        "tax": 47
+      }
+    }
+  },
+  "reward_discrimination": {
+    "n_train": 794,
+    "eligible": 794,
+    "eligible_pct": 100.0,
+    "mask_component_hits": {
+      "schema": 794,
+      "keyfields": 778,
+      "items": 622,
+      "fidelity": 787
+    },
+    "gold_mean": 1.0,
+    "gold_min": 1.0,
+    "gold_eq_1_pct": 100.0,
+    "negatives": {
+      "missing_items": {
+        "n": 622,
+        "mean": 0.1697,
+        "max": 0.991,
+        "below_gold_pct": 100.0
+      },
+      "missing_key_field": {
+        "n": 778,
+        "mean": -1.0,
+        "max": -1.0,
+        "below_gold_pct": 100.0
+      },
+      "wrong_price": {
+        "n": 204,
+        "mean": 0.9186,
+        "max": 0.9892,
+        "below_gold_pct": 100.0
+      }
+    },
+    "neg_mean": -0.3024,
+    "margin_mean": 1.3024,
+    "margin_median": 2.0,
+    "margin_min": 0.009
+  },
+  "item_matching": {
+    "oracle": {
+      "n": 53,
+      "hungarian_f1": 1.0,
+      "positional_f1": 1.0,
+      "delta_pt": 0.0
+    },
+    "order_shuffle": {
+      "n": 53,
+      "hungarian_f1": 1.0,
+      "positional_f1": 0.118,
+      "delta_pt": 88.2
+    },
+    "drop_last_item": {
+      "n": 53,
+      "hungarian_f1": 0.7605,
+      "positional_f1": 0.7605,
+      "delta_pt": 0.0
+    },
+    "duplicate_first": {
+      "n": 53,
+      "hungarian_f1": 0.8445,
+      "positional_f1": 0.3364,
+      "delta_pt": 50.82
+    },
+    "price_off_by_1": {
+      "n": 53,
+      "hungarian_f1": 0.9481,
+      "positional_f1": 0.9481,
+      "delta_pt": 0.0
+    }
+  },
+  "consistency": {
+    "samples_with_check": 0,
+    "pct": 0.0,
+    "checks": {}
+  },
+  "notes": [
+    "只读 manifest，不加载模型；无模型精度含义",
+    "扰动集为确定性构造，用于检验评估器与奖励的判别力，不是模型输出"
+  ]
+}

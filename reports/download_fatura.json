@@ -1,0 +1,22 @@
+{
+  "source": "FATURA",
+  "status": "incomplete_network_timeout",
+  "verified_download": false,
+  "official_size": 690717658,
+  "official_md5": "4c9404462f22c5241eb1a290a02eb2a2",
+  "source_url": "https://zenodo.org/records/10371464",
+  "attempted_urls": ["https://zenodo.org/api/records/10371464/files/FATURA2.zip/content", "https://zenodo.org/records/10371464/files/FATURA2.zip?download=1"],
+  "chunk_files": 24,
+  "complete_4MiB_chunks": 20,
+  "cached_chunk_bytes": 90964852,
+  "chunk_directory": "data/raw/fatura-chunks",
+  "last_error": "curl 28 timeout after 180 seconds for range 62914560-67108863; 4031348 of 4194304 bytes received",
+  "archive_assembled": false,
+  "official_md5_verified": false,
+  "extracted_for_training": false,
+  "included_in_current_training_data": false,
+  "license": "CC-BY-4.0",
+  "attribution": "Mahmoud Limam, Marwa Dhiaf and Yousri Kessentini (2023)",
+  "next_step": "Resume or supply full official FATURA2.zip; validate official MD5, safely extract, verify actual Original_Format/CSV layout before strict conversion",
+  "limitation": "HTTP HEAD success and completed chunk sizes do not establish full dataset integrity"
+}

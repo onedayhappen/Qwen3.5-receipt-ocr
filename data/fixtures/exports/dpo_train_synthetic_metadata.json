@@ -1,0 +1,133 @@
+{
+  "pairs": 8,
+  "split": "train",
+  "purpose": "cpu_regression",
+  "synthetic_pairs": 8,
+  "synthetic_source_pairs": 8,
+  "limitation": "synthetic_negatives 是工程错误注入，不等于真实模型偏好；source-reviewed 不等于本轮人工双审",
+  "filtered": {},
+  "pair_metadata": [
+    {
+      "sample_id": "synthetic-receipt-00",
+      "split": "train",
+      "synthetic_source": true,
+      "purpose": "cpu_regression",
+      "error_type": "missing_items",
+      "chosen_reward": 1.0,
+      "rejected_reward": -1.0,
+      "margin": 2.0,
+      "chosen_review_source": "synthetic_generator",
+      "candidate": {
+        "provenance": "synthetic_negatives",
+        "synthetic": true
+      }
+    },
+    {
+      "sample_id": "synthetic-receipt-00",
+      "split": "train",
+      "synthetic_source": true,
+      "purpose": "cpu_regression",
+      "error_type": "missing_field",
+      "chosen_reward": 1.0,
+      "rejected_reward": -1.0,
+      "margin": 2.0,
+      "chosen_review_source": "synthetic_generator",
+      "candidate": {
+        "provenance": "synthetic_negatives",
+        "synthetic": true
+      }
+    },
+    {
+      "sample_id": "synthetic-receipt-01",
+      "split": "train",
+      "synthetic_source": true,
+      "purpose": "cpu_regression",
+      "error_type": "missing_items",
+      "chosen_reward": 1.0,
+      "rejected_reward": -1.0,
+      "margin": 2.0,
+      "chosen_review_source": "synthetic_generator",
+      "candidate": {
+        "provenance": "synthetic_negatives",
+        "synthetic": true
+      }
+    },
+    {
+      "sample_id": "synthetic-receipt-01",
+      "split": "train",
+      "synthetic_source": true,
+      "purpose": "cpu_regression",
+      "error_type": "missing_field",
+      "chosen_reward": 1.0,
+      "rejected_reward": -1.0,
+      "margin": 2.0,
+      "chosen_review_source": "synthetic_generator",
+      "candidate": {
+        "provenance": "synthetic_negatives",
+        "synthetic": true
+      }
+    },
+    {
+      "sample_id": "synthetic-receipt-02",
+      "split": "train",
+      "synthetic_source": true,
+      "purpose": "cpu_regression",
+      "error_type": "missing_items",
+      "chosen_reward": 1.0,
+      "rejected_reward": -1.0,
+      "margin": 2.0,
+      "chosen_review_source": "synthetic_generator",
+      "candidate": {
+        "provenance": "synthetic_negatives",
+        "synthetic": true
+      }
+    },
+    {
+      "sample_id": "synthetic-receipt-02",
+      "split": "train",
+      "synthetic_source": true,
+      "purpose": "cpu_regression",
+      "error_type": "missing_field",
+      "chosen_reward": 1.0,
+      "rejected_reward": -1.0,
+      "margin": 2.0,
+      "chosen_review_source": "synthetic_generator",
+      "candidate": {
+        "provenance": "synthetic_negatives",
+        "synthetic": true
+      }
+    },
+    {
+      "sample_id": "synthetic-receipt-03",
+      "split": "train",
+      "synthetic_source": true,
+      "purpose": "cpu_regression",
+      "error_type": "missing_items",
+      "chosen_reward": 1.0,
+      "rejected_reward": -1.0,
+      "margin": 2.0,
+      "chosen_review_source": "synthetic_generator",
+      "candidate": {
+        "provenance": "synthetic_negatives",
+        "synthetic": true
+      }
+    },
+    {
+      "sample_id": "synthetic-receipt-03",
+      "split": "train",
+      "synthetic_source": true,
+      "purpose": "cpu_regression",
+      "error_type": "missing_field",
+      "chosen_reward": 1.0,
+      "rejected_reward": -1.0,
+      "margin": 2.0,
+      "chosen_review_source": "synthetic_generator",
+      "candidate": {
+        "provenance": "synthetic_negatives",
+        "synthetic": true
+      }
+    }
+  ],
+  "synthetic": true,
+  "not_business_training_data": true
+}

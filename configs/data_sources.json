@@ -1,0 +1,32 @@
+{
+  "cord": {
+    "source": "naver-clova-ix/cord-v2",
+    "revision": "7f0115a4b758a71d6473b8d085751692da2fef98",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://huggingface.co/datasets/naver-clova-ix/cord-v2",
+    "attribution": "Park et al., CORD: A Consolidated Receipt Dataset for Post-OCR Parsing (2019); NAVER CLOVA",
+    "files": [
+      {"path":"data/train-00000-of-00004-b4aaeceff1d90ecb.parquet","size":490224630,"sha256":"da3994eee1bf9bd3c57f0d53a72c3a6812c8696c5ba26245987949ddf73483cc"},
+      {"path":"data/train-00001-of-00004-7dbbe248962764c5.parquet","size":441418432,"sha256":"cce4def16a0d6a6c75f80be712f7494c56c318a8829b712f5c62650155c9e58e"},
+      {"path":"data/train-00002-of-00004-688fe1305a55e5cc.parquet","size":443802181,"sha256":"591e2db8fe8b1d364b054f46e8c375b7f00e72578914ba46a573b6858162cab2"},
+      {"path":"data/train-00003-of-00004-2d0cd200555ed7fd.parquet","size":455555434,"sha256":"1ffd9de8d6fbcee7630fd4cdfedff05b9b7fabc0fae4fc17557c5fe7cf178748"},
+      {"path":"data/validation-00000-of-00001-cc3c5779fe22e8ca.parquet","size":242080800,"sha256":"0d0f6dac11fdcc549de2746aa9f53136a3bc22a2a1aff2b0b847f7622ad60c15"},
+      {"path":"data/test-00000-of-00001-9c204eb3f4e11791.parquet","size":234202795,"sha256":"51c65f1788faff392abe2a0b55b023eb23e9be551c509138eaa3a832514224e7"}
+    ],
+    "limitations": ["Indonesian receipt domain, not a Chinese receipt benchmark", "Public labels exclude store_info and payment_info", "Official split is not guaranteed merchant-disjoint"]
+  },
+  "fatura": {
+    "source":"FATURA Dataset",
+    "source_url":"https://zenodo.org/records/10371464",
+    "doi":"10.5281/zenodo.10371464",
+    "license":"CC-BY-4.0",
+    "license_url":"https://creativecommons.org/licenses/by/4.0/",
+    "attribution":"Mahmoud Limam, Marwa Dhiaf and Yousri Kessentini, Digital Research Center of Sfax (2023)",
+    "url":"https://zenodo.org/api/records/10371464/files/FATURA2.zip/content",
+    "filename":"FATURA2.zip",
+    "size":690717658,
+    "md5":"4c9404462f22c5241eb1a290a02eb2a2",
+    "limitations":["Synthetic invoice layouts, not natural phone-photo receipt domain", "Unannotated TABLE placeholders must not supervise empty receipt items"]
+  }
+}

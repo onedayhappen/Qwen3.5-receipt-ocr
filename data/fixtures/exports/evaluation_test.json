@@ -1,0 +1,63 @@
+[
+  {
+    "image": "images/synthetic-receipt-05.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\n读取所提供票据图像，只输出一个符合以下 JSON schema 的对象。不要输出 Markdown、解释、推理过程或额外文本。只提取 schema 允许的字段，不输出其他字段。忠实保留票面原文、金额单位和字段归属，不改写或纠正商户、编号或金额。没有印出或无法读取的信息用 null，不依据常识、加总关系或其他字段猜测补全。日期存在歧义时保留原文，不猜测日月顺序。逐行提取商品明细，不漏行、不重复、不虚构商品；name、quantity、price 缺失或不可读时用 null，不默认数量为 1。price 保留票面值；无明确上下文时不要认定它是单价或行金额，不自行乘数量。主商品及有名称的子商品按票面顺序作为独立行列出，保留原始名称，不把套餐子项价格加回主项。items 仅在确认票面没有商品明细时使用 []，无法确定时使用 null。\nJSON schema:\n{\"$schema\": \"https://json-schema.org/draft/2020-12/schema\", \"additionalProperties\": false, \"properties\": {\"items\": {\"items\": {\"additionalProperties\": false, \"properties\": {\"name\": {\"type\": [\"string\", \"null\"]}, \"price\": {\"type\": [\"string\", \"null\"]}, \"quantity\": {\"type\": [\"string\", \"null\"]}}, \"required\": [\"name\", \"quantity\", \"price\"], \"type\": \"object\"}, \"type\": [\"array\", \"null\"]}, \"merchant_name\": {\"type\": [\"string\", \"null\"]}, \"total\": {\"type\": [\"string\", \"null\"]}}, \"required\": [\"merchant_name\", \"items\", \"total\"], \"type\": \"object\"}"
+      },
+      {
+        "from": "gpt",
+        "value": "{\"items\": [{\"name\": \"SYNTHETIC ITEM 5\", \"price\": \"7.50\", \"quantity\": \"1\"}], \"merchant_name\": \"SYNTHETIC STORE 5\", \"total\": \"7.50\"}"
+      }
+    ],
+    "sample_id": "synthetic-receipt-05",
+    "split": "test",
+    "schema_version": "receipt_v1",
+    "ground_truth": {
+      "items": [
+        {
+          "name": "SYNTHETIC ITEM 5",
+          "price": "7.50",
+          "quantity": "1"
+        }
+      ],
+      "merchant_name": "SYNTHETIC STORE 5",
+      "total": "7.50"
+    },
+    "annotation": {
+      "field_status": {
+        "address": "unannotated",
+        "date": "unannotated",
+        "items": "present_readable",
+        "merchant_name": "present_readable",
+        "order_number": "unannotated",
+        "payment_method": "unannotated",
+        "phone": "unannotated",
+        "subtotal": "unannotated",
+        "tax": "unannotated",
+        "time": "unannotated",
+        "total": "present_readable"
+      },
+      "human_reviewed_this_round": false,
+      "item_field_status": [
+        {
+          "name": "present_readable",
+          "price": "present_readable",
+          "quantity": "present_readable"
+        }
+      ],
+      "items_complete": true,
+      "price_basis": "line",
+      "review_source": "synthetic_generator",
+      "reviewed": true,
+      "subtotal_equation": null,
+      "total_equation": null
+    },
+    "requested_fields": [
+      "merchant_name",
+      "items",
+      "total"
+    ]
+  }
+]

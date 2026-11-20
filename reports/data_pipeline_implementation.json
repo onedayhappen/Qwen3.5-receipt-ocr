@@ -1,0 +1,85 @@
+{
+  "status": "implemented_cpu_verified",
+  "scope": "独立仓库中的数据模块、六个工具、数据测试、显式 synthetic 夹具和本报告；没有修改原仓库或训练/服务核心",
+  "test_results": {
+    "data_pipeline_tests": 36,
+    "joint_data_schema_matching_metrics_rewards_tests": 148,
+    "passed": 148,
+    "gpu_or_training_experiment_performed": false,
+    "commands": [
+      "python -m pytest tests/receipt/test_data_pipeline.py tests/receipt/test_core_schema_matching.py tests/receipt/test_core_metrics_rewards.py -q"
+    ]
+  },
+  "input_formats": {
+    "cord": [
+      "data/raw/cord 中 train/validation/test parquet，列 image={bytes,path} 和 ground_truth JSON 含 gt_parse",
+      "官方 split/images（或 image）及 split/json 目录",
+      "直接 images/json 根目录需明确 --split train/dev/test，不能猜测集合"
+    ],
+    "fatura": [
+      "invoices_dataset_final/images",
+      "invoices_dataset_final/Annotations/Original_Format",
+      "strat1_train.csv、strat1_dev.csv、strat1_test.csv；img_path/annot_path 列"
+    ]
+  },
+  "verified_public_cord_labels": {
+    "location": "data/raw/cord",
+    "parquet_shards_inspected": 6,
+    "ground_truth_rows_inspected": 1000,
+    "observed_top_level_gt_parse_groups": {"menu": 1000, "sub_total": 681, "total": 998, "void_menu": 1},
+    "observed_menu_keys": {"nm": 2142, "price": 2130, "cnt": 1946, "num": 88, "unitprice": 584, "discountprice": 88, "itemsubtotal": 6, "sub": 130, "etc": 9},
+    "implemented_amount_keys": ["sub_total.subtotal_price", "sub_total.tax_price", "total.total_price"],
+    "amount_group_compatibility_alias": "subtotal",
+    "items_projection": "menu 和 menu.sub 按源序展平，原层级和 bbox 留在 source_gt；不编造数量 1",
+    "price_basis": "line，已保留主线程核实的官方 menu.price=total price of menu 定义",
+    "equations_enabled": false,
+    "unannotated_fields_not_requested": ["merchant_name", "address", "phone", "date", "time", "order_number", "payment_method"],
+    "review_source": "公开 source GT；本轮没有人工复核，更不是本轮双审",
+    "grouping_limitation": "无可用商户标注，官方 split 不等于商户隔离",
+    "coverage_is_not_business_model_accuracy": true
+  },
+  "fatura_validation": {
+    "real_source_files_available_to_this_agent": false,
+    "synthetic_original_format_and_csv_tests_passed": true,
+    "schema_source_split": "最终 train；strict 模板划分先于读取 GT",
+    "legacy_split_supported": true,
+    "strict_template_group_split_supported": true,
+    "table_placeholder_policy": "TABLE=[[{}]] 原样保留源 GT，但从 requested_fields 和 target 排除；OTHER 不监督",
+    "missing_policy": "只有源 field_status/status 明确 not_printed 才监督 null，否则 unannotated",
+    "unverified": ["真实 FATURA 嵌套标注变体和实际 csv 路径布局", "下载许可和真实源 GT 的完整性"]
+  },
+  "outputs": {
+    "source_conversion_default_root": "data/receipt",
+    "image_paths": "images/cord-{split}-{id}.png 或 .jpeg；复制原始编码字节，不依赖外部原目录",
+    "source_gt": "source_gt/{sample_id}.json",
+    "cord_manifests": "manifests/cord.jsonl 与 cord-{train,dev,test}.jsonl",
+    "fatura_manifests": "manifests/fatura-{legacy,strict}.jsonl 及对应逐 split 清单",
+    "invoice_schema": "manifests/invoice_fatura_v1.schema.json；审计元信息不注册进业务 prompt",
+    "training_exports": "exports/sft_{train,dev}.json、grpo_{train,dev}.json",
+    "sealed_test_export": "exports/evaluation_test.json；test 拒绝 SFT/GRPO/偏好构建",
+    "preferences": "exports/dpo_{train,dev}[_synthetic].json；chosen/rejected 之外的版本、审定及 synthetic 元信息在独立 *_metadata.json",
+    "cpu_fixtures": "data/fixtures/manifests/manifest.jsonl（6 张，train/dev/test=4/1/1），images、source_gt 和 exports；全部显式 synthetic，不能当成业务训练集",
+    "fixture_audit": "reports/data_pipeline_fixtures.json"
+  },
+  "cli": {
+    "repo_local_tools": ["prepare_cord", "prepare_fatura", "export_training_data", "build_preferences", "audit_splits", "make_fixtures"],
+    "installed_package_module": "python -m receipt.data <上述命令> --help",
+    "optional_main_thread_console_entrypoints": {
+      "receipt-data": "receipt.data:main",
+      "receipt-prepare-cord": "receipt.sources:cord_main",
+      "receipt-prepare-fatura": "receipt.sources:fatura_main",
+      "receipt-export-training-data": "receipt.data:export_main",
+      "receipt-build-preferences": "receipt.data:preferences_main",
+      "receipt-audit-splits": "receipt.data:audit_main",
+      "receipt-make-fixtures": "receipt.data:fixtures_main"
+    }
+  },
+  "remaining_limitations": [
+    "FATURA 真实原始文件尚未验证；不声称真实 FATURA 转换已验收",
+    "公开 CORD 源审定不等于本轮人工双审；分组没有商户隔离保证",
+    "已由集成修复：任何商品 quantity/price 未标注时，从实际请求字段及target移除整组items，保留原GT，不监督未知null，不删单行伪装完整性；当前状态见dataset_build.json与cord-report.json",
+    "导出只统计目标字符长度，未做真实 processor/tokenizer 视觉 token 和截断预算预检",
+    "average hash 仅报跨集近重复警告，未自动删图",
+    "人工 reviewed 候选与 gold 的奖励差用于排序；没有真实候选时仅显式 synthetic_negatives，不宣称真实模型偏好成果"
+  ]
+}

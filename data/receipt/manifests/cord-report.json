@@ -1,0 +1,2349 @@
+{
+  "samples": 992,
+  "split_counts": {
+    "test": 98,
+    "train": 794,
+    "dev": 100
+  },
+  "errors": [],
+  "synthetic_samples": 0,
+  "warnings": [],
+  "group_overlaps": [],
+  "grouping_limitations": [
+    "无可靠商户标签，官方切分不是商户隔离；语言为数据集级元信息"
+  ],
+  "near_duplicates": [],
+  "gt_coverage": [
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "address",
+      "status": "unannotated",
+      "count": 100
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "date",
+      "status": "unannotated",
+      "count": 100
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "items",
+      "status": "present_readable",
+      "count": 80
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "items",
+      "status": "unannotated",
+      "count": 20
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "merchant_name",
+      "status": "unannotated",
+      "count": 100
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "order_number",
+      "status": "unannotated",
+      "count": 100
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "payment_method",
+      "status": "unannotated",
+      "count": 100
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "phone",
+      "status": "unannotated",
+      "count": 100
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "subtotal",
+      "status": "present_readable",
+      "count": 67
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "subtotal",
+      "status": "unannotated",
+      "count": 33
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "tax",
+      "status": "present_readable",
+      "count": 47
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "tax",
+      "status": "unannotated",
+      "count": 53
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "time",
+      "status": "unannotated",
+      "count": 100
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "total",
+      "status": "present_readable",
+      "count": 98
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "total",
+      "status": "unannotated",
+      "count": 2
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "address",
+      "status": "unannotated",
+      "count": 98
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "date",
+      "status": "unannotated",
+      "count": 98
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "items",
+      "status": "present_readable",
+      "count": 75
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "items",
+      "status": "unannotated",
+      "count": 23
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "merchant_name",
+      "status": "unannotated",
+      "count": 98
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "order_number",
+      "status": "unannotated",
+      "count": 98
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "payment_method",
+      "status": "unannotated",
+      "count": 98
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "phone",
+      "status": "unannotated",
+      "count": 98
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "subtotal",
+      "status": "present_readable",
+      "count": 64
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "subtotal",
+      "status": "unannotated",
+      "count": 34
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "tax",
+      "status": "present_readable",
+      "count": 42
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "tax",
+      "status": "unannotated",
+      "count": 56
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "time",
+      "status": "unannotated",
+      "count": 98
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "total",
+      "status": "present_readable",
+      "count": 95
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "total",
+      "status": "unannotated",
+      "count": 3
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "address",
+      "status": "unannotated",
+      "count": 794
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "date",
+      "status": "unannotated",
+      "count": 794
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "items",
+      "status": "present_readable",
+      "count": 622
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "items",
+      "status": "unannotated",
+      "count": 172
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "merchant_name",
+      "status": "unannotated",
+      "count": 794
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "order_number",
+      "status": "unannotated",
+      "count": 794
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "payment_method",
+      "status": "unannotated",
+      "count": 794
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "phone",
+      "status": "unannotated",
+      "count": 794
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "subtotal",
+      "status": "present_readable",
+      "count": 522
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "subtotal",
+      "status": "unannotated",
+      "count": 272
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "tax",
+      "status": "present_readable",
+      "count": 349
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "tax",
+      "status": "unannotated",
+      "count": 445
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "time",
+      "status": "unannotated",
+      "count": 794
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "total",
+      "status": "present_readable",
+      "count": 778
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "total",
+      "status": "unannotated",
+      "count": 16
+    }
+  ],
+  "source": "cord",
+  "raw_source_samples": 1000,
+  "excluded": [
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-57",
+      "split": "test",
+      "reason": "no_reliable_target_fields",
+      "suppressed_fields": [
+        "items"
+      ],
+      "image": "images/cord-test-test-00000-of-00001-9c204eb3f4e11791-57.png",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-57.json",
+      "source_hash": "5247f1a4f69149e499d849654335da75cb4a534539cd375b8606f96d2c8a983d"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-76",
+      "split": "test",
+      "reason": "no_reliable_target_fields",
+      "suppressed_fields": [
+        "items"
+      ],
+      "image": "images/cord-test-test-00000-of-00001-9c204eb3f4e11791-76.png",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-76.json",
+      "source_hash": "bebf2e07acd27c26005e459e6cb5f0dc8af8eb5f202808ef0f82e803c7f2f8d5"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-113",
+      "split": "train",
+      "reason": "no_reliable_target_fields",
+      "suppressed_fields": [
+        "items"
+      ],
+      "image": "images/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-113.png",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-113.json",
+      "source_hash": "98838fd8fbf7cc1cc76dc19d61b71a3a19e1e556961ed4ff812326000deb89d4"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-138",
+      "split": "train",
+      "reason": "no_reliable_target_fields",
+      "suppressed_fields": [
+        "items"
+      ],
+      "image": "images/cord-train-train-00001-of-00004-7dbbe248962764c5-138.png",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-138.json",
+      "source_hash": "ec3cb1d9b0b26f1becb1e9dad4cd1ef68ec941131496e2bd4863d5d61add0e01"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-155",
+      "split": "train",
+      "reason": "no_reliable_target_fields",
+      "suppressed_fields": [
+        "items"
+      ],
+      "image": "images/cord-train-train-00002-of-00004-688fe1305a55e5cc-155.png",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-155.json",
+      "source_hash": "791cffa1346555788a2166c5b85e640f109be284be6912c8f284676229232b04"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-82",
+      "split": "train",
+      "reason": "no_reliable_target_fields",
+      "suppressed_fields": [
+        "items"
+      ],
+      "image": "images/cord-train-train-00003-of-00004-2d0cd200555ed7fd-82.png",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-82.json",
+      "source_hash": "8c233b8b530aa8d44036c6417b8a8a1c1673085b5ce3db9ffee5d233dbcd8776"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-95",
+      "split": "train",
+      "reason": "no_reliable_target_fields",
+      "suppressed_fields": [
+        "items"
+      ],
+      "image": "images/cord-train-train-00003-of-00004-2d0cd200555ed7fd-95.png",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-95.json",
+      "source_hash": "9e99d761d42a03c7c6592e1c666e3cb5ed840cfe9746c113c3974dc6f43f2461"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-99",
+      "split": "train",
+      "reason": "no_reliable_target_fields",
+      "suppressed_fields": [],
+      "image": "images/cord-train-train-00003-of-00004-2d0cd200555ed7fd-99.png",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-99.json",
+      "source_hash": "15f5f96089c99faf924bde969b9f9c5be0942b042feba01f871e61569ef914c0"
+    }
+  ],
+  "supervision_policy": "omit_whole_items_if_any_attribute_unannotated",
+  "suppressed_item_documents": 210,
+  "suppressed_fields": [
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-1",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-1.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-2",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-2.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-5",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-5.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-7",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-7.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-9",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-9.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-12",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-12.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-26",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-26.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-27",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-27.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-30",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-30.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-41",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-41.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-43",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-43.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-46",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-46.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-48",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-48.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-54",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-54.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-56",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-56.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-57",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-57.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-63",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-63.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-64",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-64.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-66",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-66.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-68",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-68.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-70",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-70.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-74",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-74.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-76",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-76.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-80",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-80.json"
+    },
+    {
+      "sample_id": "cord-test-test-00000-of-00001-9c204eb3f4e11791-97",
+      "split": "test",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-test-test-00000-of-00001-9c204eb3f4e11791-97.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-1",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-1.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-7",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-7.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-10",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-10.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-16",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-16.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-19",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-19.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-20",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-20.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-23",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-23.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-25",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-25.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-27",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-27.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-30",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-30.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-37",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-37.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-39",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-39.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-47",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-47.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-50",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-50.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-51",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-51.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-62",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-62.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-63",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-63.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-64",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-64.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-70",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-70.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-75",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-75.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-87",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-87.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-92",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-92.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-99",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-99.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-104",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-104.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-108",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-108.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-113",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-113.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-114",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-114.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-115",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-115.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-124",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-124.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-129",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-129.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-134",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-134.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-136",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-136.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-146",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-146.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-147",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-147.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-153",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-153.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-157",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-157.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-159",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-159.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-165",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-165.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-167",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-167.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-173",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-173.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-175",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-175.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-178",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-178.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-180",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-180.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-182",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-182.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-192",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-192.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-193",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-193.json"
+    },
+    {
+      "sample_id": "cord-train-train-00000-of-00004-b4aaeceff1d90ecb-194",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00000-of-00004-b4aaeceff1d90ecb-194.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-7",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-7.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-14",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-14.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-20",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-20.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-22",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-22.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-26",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-26.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-29",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-29.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-30",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-30.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-37",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-37.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-49",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-49.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-55",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-55.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-57",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-57.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-66",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-66.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-69",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-69.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-70",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-70.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-76",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-76.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-78",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-78.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-79",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-79.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-82",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-82.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-89",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-89.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-95",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-95.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-106",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-106.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-116",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-116.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-131",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-131.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-138",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-138.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-143",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-143.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-153",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-153.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-155",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-155.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-158",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-158.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-168",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-168.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-169",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-169.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-171",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-171.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-178",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-178.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-183",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-183.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-196",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-196.json"
+    },
+    {
+      "sample_id": "cord-train-train-00001-of-00004-7dbbe248962764c5-198",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00001-of-00004-7dbbe248962764c5-198.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-2",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-2.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-7",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-7.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-29",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-29.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-31",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-31.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-49",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-49.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-53",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-53.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-59",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-59.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-62",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-62.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-65",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-65.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-66",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-66.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-67",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-67.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-71",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-71.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-75",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-75.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-77",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-77.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-79",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-79.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-82",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-82.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-89",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-89.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-92",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-92.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-95",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-95.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-102",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-102.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-103",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-103.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-105",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-105.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-106",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-106.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-118",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-118.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-121",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-121.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-126",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-126.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-130",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-130.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-143",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-143.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-146",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-146.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-155",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-155.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-162",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-162.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-164",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-164.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-167",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-167.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-177",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-177.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-183",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-183.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-191",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-191.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-192",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-192.json"
+    },
+    {
+      "sample_id": "cord-train-train-00002-of-00004-688fe1305a55e5cc-193",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00002-of-00004-688fe1305a55e5cc-193.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-8",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-8.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-10",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-10.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-23",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-23.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-31",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-31.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-35",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-35.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-36",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-36.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-45",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-45.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-50",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-50.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-52",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-52.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-53",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-53.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-58",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-58.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-64",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-64.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-66",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-66.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-69",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-69.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-71",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-71.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-72",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-72.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-74",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-74.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-80",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-80.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-82",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-82.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-84",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-84.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-88",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-88.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-90",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-90.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-93",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-93.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-95",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-95.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-107",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-107.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-108",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-108.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-110",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-110.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-111",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-111.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-115",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-115.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-118",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-118.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-122",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-122.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-127",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-127.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-130",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-130.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-138",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-138.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-140",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-140.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-142",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-142.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-144",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-144.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-145",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-145.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-148",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-148.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-150",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-150.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-154",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-154.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-165",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-165.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-175",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-175.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-177",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-177.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-178",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-178.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-181",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-181.json"
+    },
+    {
+      "sample_id": "cord-train-train-00003-of-00004-2d0cd200555ed7fd-191",
+      "split": "train",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-train-train-00003-of-00004-2d0cd200555ed7fd-191.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-3",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-3.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-22",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-22.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-36",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-36.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-39",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-39.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-56",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-56.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-58",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-58.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-66",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-66.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-67",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-67.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-73",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-73.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-77",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-77.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-83",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-83.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-84",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-84.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-87",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-87.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-88",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-88.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-91",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-91.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-93",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-93.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-96",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-96.json"
+    },
+    {
+      "sample_id": "cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-99",
+      "split": "dev",
+      "fields": [
+        "items"
+      ],
+      "reason": "unannotated_item_attributes",
+      "source_gt": "source_gt/cord-dev-validation-00000-of-00001-cc3c5779fe22e8ca-99.json"
+    }
+  ],
+  "suppressed_item_split_counts": {
+    "test": 25,
+    "train": 167,
+    "dev": 18
+  },
+  "supervised_item_documents": 777,
+  "excluded_policy": "original images and source GT retained, but no unsupported training targets invented",
+  "input_formats": [
+    "cord_v2_parquet"
+  ],
+  "observed_mapping_counts": {
+    "sub_total.subtotal_price": 653,
+    "sub_total.tax_price": 438,
+    "total.total_price": 971,
+    "menu.nm/menu.cnt/menu.price": 777
+  },
+  "price_basis_verified": true,
+  "subtotal_group_aliases": [
+    "subtotal",
+    "sub_total"
+  ],
+  "nested_items": "menu.sub flattened; original hierarchy retained in source_gt",
+  "unverified_mappings": [
+    "merchant_name",
+    "address",
+    "date",
+    "phone",
+    "time",
+    "order_number",
+    "payment_method"
+  ],
+  "review_limitation": "没有本轮人工复核，不声称双审；不启用加总方程"
+}

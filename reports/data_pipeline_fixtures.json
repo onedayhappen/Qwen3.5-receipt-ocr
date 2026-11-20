@@ -1,0 +1,247 @@
+{
+  "samples": 6,
+  "split_counts": {
+    "train": 4,
+    "dev": 1,
+    "test": 1
+  },
+  "errors": [],
+  "synthetic_samples": 6,
+  "warnings": [],
+  "group_overlaps": [],
+  "grouping_limitations": [],
+  "near_duplicates": [],
+  "gt_coverage": [
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "address",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "date",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "items",
+      "status": "present_readable",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "merchant_name",
+      "status": "present_readable",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "order_number",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "payment_method",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "phone",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "subtotal",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "tax",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "time",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "dev",
+      "field": "total",
+      "status": "present_readable",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "address",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "date",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "items",
+      "status": "present_readable",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "merchant_name",
+      "status": "present_readable",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "order_number",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "payment_method",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "phone",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "subtotal",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "tax",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "time",
+      "status": "unannotated",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "test",
+      "field": "total",
+      "status": "present_readable",
+      "count": 1
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "address",
+      "status": "unannotated",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "date",
+      "status": "unannotated",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "items",
+      "status": "present_readable",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "merchant_name",
+      "status": "present_readable",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "order_number",
+      "status": "unannotated",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "payment_method",
+      "status": "unannotated",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "phone",
+      "status": "unannotated",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "subtotal",
+      "status": "unannotated",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "tax",
+      "status": "unannotated",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "time",
+      "status": "unannotated",
+      "count": 4
+    },
+    {
+      "schema_version": "receipt_v1",
+      "split": "train",
+      "field": "total",
+      "status": "present_readable",
+      "count": 4
+    }
+  ]
+}
