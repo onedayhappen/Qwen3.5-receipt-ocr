@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "qwen35-receipt-ocr"
 version = "0.1.0"
 description = "Independent Qwen3.5 receipt extraction, data governance, SFT, DPO and RLVR toolkit"
-readme = "docs/plan.md"
+readme = "README.md"
 requires-python = ">=3.11,<3.14"
 license = "MIT"
 license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "licenses/*.txt"]
