@@ -80,18 +80,6 @@ python tools/receipt/export_training_data.py # 导出训练数据
 python tools/receipt/verify_project.py --wheel-target <dir>  # 全量验收，产出 reports/acceptance.json
 ```
 
-## 验证边界（请先读这一段）
-
-本项目**只完成了 CPU 层面的代码与数据管线验收**，以下结论**不成立**，也不应据此引用：
-
-- 没有 GPU 训练结果，没有模型准确率、F1 或业务正确交付率数字
-- 未实测 Qwen3.5 权重加载、LoRA 合并的数值等价性
-- 未启动真实推理后端，服务层仅有 mock 回归
-- FATURA 未完成全量下载，相关处理只有合成格式回归
-- 偏好数据为合成错误，不是人工审定的模型生成
-
-这些边界同时记录在 `reports/acceptance.json` 的 `limitations` 字段中。设计与实验口径见 [docs/plan.md](docs/plan.md)。
-
 ## 许可证
 
 - 本项目原创部分：**MIT**，见 [LICENSE](LICENSE)
